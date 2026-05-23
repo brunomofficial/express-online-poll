@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="vote-container">
+        <span id="question">Pick a color</span>
+        <br>
+        <div class="voteBtns">
+
+            <input type="radio" name="vote" id="redBtn" value="red">
+            <label for="redBtn">Red</label>
+
+            <br>
+
+            <input type="radio" name="vote" id="blueBtn" value="blue">
+            <label for="blueBtn">Blue</label>
+
+        </div>
+
+
+        <input type="text" id="emailInput" placeholder="Enter your email address">
+        <button id="confirmButton" onclick="submit()">Confirm</button>
+    </div>
+
+    <div id="vote-list-container">
+        <span><i>Live stats</i></span>
+        <br>
+        
+        <div id="voteCounters">
+            <div id="blueLabel">Blue: <span id="blueCountSpan" class="voteSpan">0</span> </div>
+            |
+            <div id="redLabel">Red: <span id="redCountSpan" class="voteSpan">0</span> </div>
+        </div>
+
+        <br>
+        <div id="totalCountLabel">Total votes: <span id="totalCountSpan"><span></div>
+        <div id="submittedVotesContainer">
+            <ul id="submittedVotesList">
+            </ul>
+        </div>
+        
+    </div>
+
+    <button id="showVotesBtn" 
+    >Show votes</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
